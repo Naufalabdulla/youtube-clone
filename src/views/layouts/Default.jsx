@@ -23,7 +23,7 @@ const Default = () => {
             <button type="button" className=' bg-gray-800 rounded-full py-2 px-3  hover:bg-gray-700'>m</button>
           </div>
 
-          <div className='rounded-full'>y</div>
+          <div className='rounded-full'>youtube</div>
         </div>
       </nav>
 
