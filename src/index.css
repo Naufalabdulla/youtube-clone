@@ -18,6 +18,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.background_search{
+  background-image: url('http://i50.tinypic.com/20keohf.jpg');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  @apply caret-purple-900
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
