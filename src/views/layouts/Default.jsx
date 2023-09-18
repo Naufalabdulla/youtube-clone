@@ -10,7 +10,7 @@ const Default = () => {
   return (
     <>
       <nav className='w-full py-1 px-4'>
-        <div className='flex w-full items-center gap-1 py-1'>
+        <div className='flex w-full items-center justify-between py-1'>
           <div className='flex w-fit items-center gap-2'>
               <img src="./assets/hamburg-002.svg" alt="youtube" className='hover:bg-slate-600 p-2 cursor-pointer' onClick={() => setSidebar((prev) => !prev)}/>
               <Link to="/" className='flex items-center gap-1'>
@@ -19,7 +19,7 @@ const Default = () => {
               </Link>
           </div>
 
-          <div className='flex w-full justify-center gap-2 items-center'>
+          <div className='flex justify-center gap-2 items-center'>
             <input className='background_search flex w-2/5 rounded-full bg-inherit border border-gray-700 px-3 py-2' placeholder='search' type="text" name="" id="" />
             <button type="button" className=' bg-gray-800 rounded-full py-2 px-3  hover:bg-gray-700'>m</button>
           </div>
