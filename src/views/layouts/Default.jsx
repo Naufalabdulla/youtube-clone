@@ -19,7 +19,7 @@ const Default = () => {
           </div>
 
           <div className='flex gap-2 items-center'>
-            <input className='flex rounded-2xl px-3 py-2' placeholder='search' type="text" name="" id="" />
+            <input className='flex rounded-full bg-inherit border border-neutral-700 px-3 py-2 w-96' placeholder='search' type="text" name="" id="" />
             <div className='flex relative'>
               <button type="button" className='peer bg-gray-800 rounded-full py-2 px-3  hover:bg-gray-700'>m</button>
               {/* <p className='hidden peer-hover:inline-flex bg-gray-500 rounded-md p-2 mt-5 -left-1 absolute top-full text-xs'>Voice</p> */}
