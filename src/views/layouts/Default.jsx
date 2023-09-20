@@ -41,8 +41,8 @@ const Default = () => {
       </nav>
 
       <div className='flex'>
-        {/* {sidebar ?<div>sidebar</div> : <div>s</div>} */}
-        <Outlet />
+        {sidebar ?<div>sidebar</div> : <div>s</div>}
+        {/* <Outlet /> */}
       </div>
     </>
   )
