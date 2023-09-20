@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Nav from '../../components/Nav'
 import { Outlet } from 'react-router'
 import { Link } from 'react-router-dom'
 
