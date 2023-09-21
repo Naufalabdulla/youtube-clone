@@ -40,8 +40,14 @@ const Default = () => {
       </nav>
 
       <div className='flex'>
-        {sidebar ?<div>sidebar</div> : <div>s</div>}
-        {/* <Outlet /> */}
+        {sidebar ?<div>sidebar</div> : 
+        <div className=' bg-slate-800 w-14 border-r m-1'>
+          <div className='py-5 w-full flex justify-center bg-neutral-500'>
+          <img className='' src="./assets/hamburg-002.svg" alt="" />
+          {/* <p className='text-xs'>home</p> */}
+          </div>
+        </div>}
+        <Outlet />
       </div>
     </>
   )
