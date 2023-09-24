@@ -4,9 +4,24 @@ import { Link } from 'react-router-dom'
 
 const Default = () => {
   const [sidebar, setSidebar] = useState(true)
+  
 
   return (
     <>
+      <Navbar/>
+
+      <div className='flex'>
+        <Sidbar/>
+        <Outlet />
+      </div>
+    </>
+  )
+}
+
+export default Default
+
+const Navbar = () => {
+  return(
       <nav className='w-full py-1 px-4'>
         <div className='flex w-full items-center justify-between py-1'>
           <div className='flex items-center gap-2'>
@@ -38,19 +53,35 @@ const Default = () => {
           </div>
         </div>
       </nav>
-
-      <div className='flex'>
-        {sidebar ?<div>sidebar</div> : 
-        <div className=' bg-slate-800 w-14 border-r m-1'>
-          <div className='py-5 w-full flex justify-center bg-neutral-500'>
-          <img className='' src="./assets/home.svg" alt="" />
-          {/* <p className='text-xs'>home</p> */}
-          </div>
-        </div>}
-        <Outlet />
-      </div>
-    </>
   )
 }
 
-export default Default
+const Sidbar = () => {
+  // {sidebar ?<div>sidebar</div> : 
+        <div className=' bg-slate-800 w-14 border-r m-1'>
+          <div className='py-5 w-full flex justify-center cursor-pointer hover:bg-white focus:fill-white bg-neutral-500'>
+            <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="black" stroke-width="2"/>
+            </svg>
+            {/* <p className='text-xs'>home</p> */}
+          </div>
+
+          <div className='py-5 w-full flex justify-center cursor-pointer hover:bg-white focus:fill-white'>
+            <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="black" stroke-width="2"/>
+            </svg>
+            {/* <p className='text-xs'>home</p> */}
+          </div>
+
+          <div className='py-5 w-full flex justify-center cursor-pointer hover:bg-white focus:fill-white'>
+            <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="7" width="30" height="18" stroke="black" stroke-width="2"/>
+              <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="black" stroke="black"/>
+              <line x1="2" y1="4" x2="29" y2="4" stroke="black" stroke-width="2"/>
+              <line x1="6" y1="1" x2="25" y2="1" stroke="black" stroke-width="2"/>
+            </svg>
+            {/* <p className='text-xs'>home</p> */}
+          </div>
+        </div>
+        // }
+}
