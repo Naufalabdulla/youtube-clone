@@ -56,36 +56,89 @@ const Navbar = (sidebar) => {
 
 const Sidebar = (props) => {
   return(
-      <div className='w-16 sticky top-0 left-0 flex flex-col bg-sky-900'>
-        {/* <div className='py-4 w-full flex justify-center cursor-pointer'>
-          <img src="./assets/hamburg-002.svg" alt="youtube" className='hover:bg-slate-600 p-2 cursor-pointer' onClick={() => setSidebar((prev) => !prev)}/>
-        </div> */}
+      <div className='sticky top-0 left-0 flex flex-col bg-sky-900'>
 
-        <div className=''>
-          <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900 focus:fill-white'>
-            <svg width="20" height="25" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
-            </svg>
-            <p className='text-xs'>Home</p>
+        {props.status ? 
+          <div className='w-16'>
+            <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="20" height="25" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-xs'>Home</p>
+            </div>
+
+            {/* <div className='py-5 w-full flex justify-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-xs'>home</p>
+            </div> */}
+
+            <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="24" height="18" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="7" width="30" height="18" stroke="white" stroke-width="2"/>
+                <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="white" stroke="white"/>
+                <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
+                <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-xs inline-block'>home</p>
+            </div>
+
+            <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+              <p className='text-xs inline-block'>Collection</p>
+            </div>
+          </div>  
+
+          :
+          
+          <div className='w-60 px-2.5 py-3'>
+            <div className='px-3 py-2 w-full flex items-center cursor-pointer rounded-lg hover:bg-red-900 gap-x-6'>
+              <svg width="20" height="25" viewBox="0 0 28 33" fill="white" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-normal font-semibold'>Home</p>
+            </div>
+
+            {/* <div className='py-5 w-full flex justify-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-normal font-normal'>home</p>
+            </div> */}
+
+            <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="24" height="18" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="7" width="30" height="18" stroke="white" stroke-width="2"/>
+                <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="white" stroke="white"/>
+                <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
+                <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
+              </svg>
+              <p className='text-normal font-normal inline-block'>Subscri</p>
+            </div>
+
+            <div className='py-5 w-full flex flex-col justify-center items-center cursor-pointer rounded-lg hover:bg-red-900'>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+
+              <p className='text-normal font-normal inline-block'>Collection</p>
+            </div>
           </div>
-
-          {/* <div className='py-5 w-full flex justify-center cursor-pointer rounded-lg hover:bg-red-900 focus:fill-white'>
-            <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
-            </svg>
-            <p className='text-xs'>home</p>
-          </div> */}
-
-          <div className='py-5 w-full flex flex-col items-center cursor-pointer rounded-lg hover:bg-red-900 focus:fill-white'>
-            <svg width="24" height="29" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="1" y="7" width="30" height="18" stroke="white" stroke-width="2"/>
-              <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="white" stroke="white"/>
-              <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
-              <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
-            </svg>
-            <p className='text-xs inline-block'>Subscription</p>
-          </div>
-        </div>         
+        }
+               
       </div>
   )
 }         
