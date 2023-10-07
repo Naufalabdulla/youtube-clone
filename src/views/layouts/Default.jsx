@@ -5,29 +5,29 @@ import { Link } from 'react-router-dom'
 const Default = () => {  
   const [items, setItems] = useState(true)
   return (
-    <>
+    <div className='h-screen overflow-hidden'>
       <Navbar status={items} superb={setItems}/>
 
-      <div className='flex'>
+      <div className='flex max-h-full overflow-auto'>
+        {/* wanna try to use w-screen to outlet and see what happen to something beside  */}
         <Sidebar status={items}/>
         <Outlet/>
       </div>
-      {/* <div className='flex flex-col w-60 p-3 bg-sky-700 absolute'>
-        <Icons2 name={'Home'}>
-          <svg width="20" height="25" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
-          </svg>
-        </Icons2>
-        <Icons2 name={'Subscribe'}>
-          <svg width="24" height="18" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="1" y="7" width="30" height="18" stroke="white" stroke-width="2"/>
-          <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="white" stroke="white"/>
-          <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
-          <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
-          </svg>
-        </Icons2>
+      {/* <div className='sticky top-0'>sticky</div>
+      <div className=' max-h-24 w-fit bg-sky-700 overflow-hidden hover:overflow-auto flex'>parent
+        <div className='sticky top-0 z-10 bg-red-800'>sticky</div>
+        <div>
+          <div className='sticky top-0 z-0 bg-blue-700'>another thing</div>
+          <div>another thing</div>
+          <div>another thing</div>
+          <div>another thing</div>
+          <div>another thing</div>
+          <div>another thing</div>
+          <div>another thing</div>
+        </div>
       </div> */}
-      </>
+      {/* <div className=' h-screen'>Home</div> */}
+      </div>
   )
 }
 
@@ -71,7 +71,7 @@ const Navbar = (props) => {
 
 const Sidebar = (props) => {
   return(
-      <div className='sticky top-0 left-0 flex flex-col bg-sky-900s'>
+      <div className='sticky top-0 flex flex-col bg-sky-900s'>
 
         {props.status ? 
           <div className='w-16'>
@@ -142,7 +142,7 @@ const Sidebar = (props) => {
 
           :
 
-          <div className='w-60 px-2.5 py-3 overscroll-auto'>
+          <div className='w-60 px-2.5 py-3 overflow-hidden hover:overflow-auto overscroll-auto'>
             <>
             <Icons2 name={'Home'}>
               <svg width="20" height="25" viewBox="0 0 28 33" fill="none" >
@@ -208,6 +208,157 @@ const Sidebar = (props) => {
                 <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
                 <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
               </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Collection'}>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Your Videos'}>
+            <svg width="19" height="19" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="25" height="25" stroke="white" stroke-width="2"/>
+              <path d="M20 13.5L10.25 19.1292L10.25 7.87083L20 13.5Z" fill="white"/>
+            </svg> 
+            </Icons2>
+            <Icons2 name={'Watch Later'}>
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="5" x2="14.5" y2="19" stroke="white" stroke-width="3"/>
+            <line x1="13.431" y1="17.5633" x2="23.431" y2="20.5633" stroke="white" stroke-width="3"/>
+            </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Collection'}>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Your Videos'}>
+            <svg width="19" height="19" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="25" height="25" stroke="white" stroke-width="2"/>
+              <path d="M20 13.5L10.25 19.1292L10.25 7.87083L20 13.5Z" fill="white"/>
+            </svg> 
+            </Icons2>
+            <Icons2 name={'Watch Later'}>
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="5" x2="14.5" y2="19" stroke="white" stroke-width="3"/>
+            <line x1="13.431" y1="17.5633" x2="23.431" y2="20.5633" stroke="white" stroke-width="3"/>
+            </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Collection'}>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Your Videos'}>
+            <svg width="19" height="19" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="25" height="25" stroke="white" stroke-width="2"/>
+              <path d="M20 13.5L10.25 19.1292L10.25 7.87083L20 13.5Z" fill="white"/>
+            </svg> 
+            </Icons2>
+            <Icons2 name={'Watch Later'}>
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="5" x2="14.5" y2="19" stroke="white" stroke-width="3"/>
+            <line x1="13.431" y1="17.5633" x2="23.431" y2="20.5633" stroke="white" stroke-width="3"/>
+            </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Home'}>
+              <svg width="20" height="25" viewBox="0 0 28 33" fill="none" >
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Shorts'}>
+              <svg width="20" height="25" viewBox="0 0 28 33" fill="none" >
+              <path d="M9.5 20V32H1V13L14 2L27 13V32H18.5V20H9.5Z" stroke="white" stroke-width="2"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Subscription'}>
+              <svg width="24" height="18" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="1" y="7" width="30" height="18" stroke="white" stroke-width="2"/>
+                <path d="M12.75 11.7369L21 16.5L12.75 21.2631V11.7369Z" fill="white" stroke="white"/>
+                <line x1="2" y1="4" x2="29" y2="4" stroke="white" stroke-width="2"/>
+                <line x1="6" y1="1" x2="25" y2="1" stroke="white" stroke-width="2"/>
+              </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Collection'}>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Your Videos'}>
+            <svg width="19" height="19" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="25" height="25" stroke="white" stroke-width="2"/>
+              <path d="M20 13.5L10.25 19.1292L10.25 7.87083L20 13.5Z" fill="white"/>
+            </svg> 
+            </Icons2>
+            <Icons2 name={'Watch Later'}>
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="5" x2="14.5" y2="19" stroke="white" stroke-width="3"/>
+            <line x1="13.431" y1="17.5633" x2="23.431" y2="20.5633" stroke="white" stroke-width="3"/>
+            </svg>
+            </Icons2>
+            </>
+            <hr className='my-4'/>
+            <>
+            <Icons2 name={'Collection'}>
+              <svg width="21" height="21" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="1" width="23" height="23" fill="none" stroke="white" stroke-width="2"/>
+                <mask id="path-2-inside-1_19_3" fill="white">
+                  <path d="M0 4H25V29H0V4Z"/>
+                </mask>
+                <path d="M0 29H-2V31H0V29ZM25 27H0V31H25V27ZM2 29V4H-2V29H2Z" fill="white" mask="url(#path-2-inside-1_19_3)"/>
+                <path d="M22 12L13 17.1962V6.80385L22 12Z" fill="white"/>
+              </svg>
+            </Icons2>
+            <Icons2 name={'Your Videos'}>
+            <svg width="19" height="19" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1" width="25" height="25" stroke="white" stroke-width="2"/>
+              <path d="M20 13.5L10.25 19.1292L10.25 7.87083L20 13.5Z" fill="white"/>
+            </svg> 
+            </Icons2>
+            <Icons2 name={'Watch Later'}>
+            <svg width="22" height="22" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14" stroke="white" stroke-width="2"/>
+            <line x1="14.5" y1="5" x2="14.5" y2="19" stroke="white" stroke-width="3"/>
+            <line x1="13.431" y1="17.5633" x2="23.431" y2="20.5633" stroke="white" stroke-width="3"/>
+            </svg>
             </Icons2>
             </>
             <hr className='my-4'/>
