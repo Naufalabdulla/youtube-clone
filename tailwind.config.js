@@ -6,7 +6,12 @@ export default {
     './public/**/*.{svg}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#121212',
+        secondary: '#1E1E1E'
+      }
+    },
   },
   plugins: [],
 }

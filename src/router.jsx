@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Default from "./views/layouts/Default";
 import Home from "./views/Home";
+import Experiment from "./views/experiment";
+import Watch from "./views/Watch";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +14,14 @@ const router = createBrowserRouter([
                 element: <Home/>
             }
         ]
+    },
+    {
+        path: '/watch',
+        element: <Watch/>
+    },
+    {
+        path:"/experiment",
+        element:<Experiment/>
     },
     {
         path: "*",

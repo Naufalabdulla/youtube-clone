@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar'
 const Default = () => {  
   const [items, setItems] = useState(false)
   return (
-    <div className='h-screen overflow-hidden'>
+    <div className='h-screen  max-w-screen overflow-hidden'>
       <Navbar status={items} superb={setItems}/>
 
       <div className='flex max-h-full overflow-auto'>
