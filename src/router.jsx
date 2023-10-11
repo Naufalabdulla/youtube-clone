@@ -3,6 +3,7 @@ import Default from "./views/layouts/Default";
 import Home from "./views/Home";
 import Experiment from "./views/experiment";
 import Watch from "./views/Watch";
+import Alpha from "./views/layouts/Alpha";
 
 const router = createBrowserRouter([
     {
@@ -16,9 +17,19 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: '/watch',
-        element: <Watch/>
+        path: '/',
+        element: <Alpha />,
+        children: [
+            {
+                path: 'watch',
+                element: <Watch />
+            }
+        ]
     },
+    // {
+    //     path: '/watch',
+    //     element: <Watch/>
+    // },
     {
         path:"/experiment",
         element:<Experiment/>

@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Content from '../components/Content'
 import React from 'react'
 
@@ -8,6 +9,7 @@ const Experiment = () => {
             <img src="/images/quantum.jpg" alt="" className=' w-48 h-48' />
             <img src="/images/quantum.jpg" alt="" className=' w-48 h-48' />
         </div>
+        <Outlet/>
     </div>
   )
 }
