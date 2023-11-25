@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Default from './views/layouts/Default'
+import Default from './pages/layouts/Default'
 
 function App() {
   const [count, setCount] = useState(0)

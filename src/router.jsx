@@ -1,9 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Default from "./views/layouts/Default";
-import Home from "./views/Home";
-import Experiment from "./views/experiment";
-import Watch from "./views/Watch";
-import Alpha from "./views/layouts/Alpha";
+import { Home, Alpha, Default, Watch, Subscription, Collection, Channel,
+         Shorts, Studio, Saved, Histori, Mix, Liked, Uploaded } from './pages'
+import Kako from "./pages/kako";
 
 const router = createBrowserRouter([
     {
@@ -12,8 +10,44 @@ const router = createBrowserRouter([
         children:[
             {
                 path: "/",
-                element: <Home/>
-            }
+                element: <Home/>,
+            },
+            {
+                path: "shorts",
+                element: <Shorts/>
+            },
+            {
+                path: "/subscription",
+                element: <Subscription/>
+            },
+            {
+                path: "/yourchannel",
+                element: <Studio/>
+            },
+            {
+                path: "/histori",
+                element: <Histori/>
+            },
+            {
+                path: "/yourvideo",
+                element: <Uploaded/>
+            },
+            {
+                path: "/collection",
+                element: <Collection/>
+            },
+            {
+                path: "/liked",
+                element: <Liked/>
+            },
+            {
+                path: "/saved",
+                element: <Saved/>
+            },
+            {
+                path: "/channel",
+                element: <Channel/>
+            },
         ]
     },
     {
@@ -26,13 +60,9 @@ const router = createBrowserRouter([
             }
         ]
     },
-    // {
-    //     path: '/watch',
-    //     element: <Watch/>
-    // },
     {
-        path:"/experiment",
-        element:<Experiment/>
+        path: '/kako',
+        element: <Kako/>
     },
     {
         path: "*",
