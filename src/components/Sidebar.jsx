@@ -6,22 +6,22 @@ const Sidebar = (props) => {
   const [first, setFirst] = useState(true)
 
   const Icons = ({logo, name, link}) => {
-    const active = 'p-5 flex flex-col items-center rounded-lg bg-gray-500'
-    const deactive = 'p-5 flex flex-col items-center rounded-lg hover:bg-gray-500 opacity-80'
+    const active = 'p-5 flex flex-col items-center rounded-lg bg-third'
+    const deactive = 'p-5 flex flex-col items-center rounded-lg hover:bg-third opacity-80'
     return(
     <NavLink to={`/${link}`} className={({isActive}) => isActive ? active : deactive}>
-      <img src={`./assets/${logo}.svg`} alt="" className='h-6 w-6' />
+      <img src={`../assets/${logo}.svg`} alt="" className='h-6 w-6' />
       <p className='text-xs capitalize'>{name}</p>
     </NavLink>
     )
   }
   
   const Icons2 = ({logo, link, name}) => {
-    const activeLink = "flex px-3 py-2.5 rounded-lg gap-5 bg-gray-500";
-    const deactiveLink = "flex px-3 py-2.5 rounded-lg gap-5 hover:bg-gray-500 opacity-80";
+    const activeLink = "flex px-3 py-2.5 rounded-lg gap-5 bg-third";
+    const deactiveLink = "flex px-3 py-2.5 rounded-lg gap-5 hover:bg-third opacity-80";
     return(
       <NavLink to={`/${link}`} className={({isActive}) => isActive ? activeLink : deactiveLink}>
-        <img src={`./assets/${logo}.svg`} alt="" className='h-6 w-6'/>
+        <img src={`../assets/${logo}.svg`} alt="" className='h-6 w-6'/>
         <p className='text-center capitalize'>{name}</p>
       </NavLink>
     )
@@ -30,7 +30,7 @@ const Sidebar = (props) => {
   // a bit problem on the sidebar in the bottom the last element will sink when the sidebear is overflowing
 
   return(
-      <div className='sticky top-0 flex'>
+      <div className='sticky top-16 h-fit col-span-2'>
 
         {props.status ? 
           <div className='w-16'>
@@ -39,7 +39,7 @@ const Sidebar = (props) => {
 
           :
 
-          <div className='w-60 px-2.5 py-3 overflow-hidden hover:overflow-auto overscroll-contain'>
+          <div className='w-60 h-screen px-2.5 py-3 overflow-hidden hover:overflow-auto overscroll-contain'>
             <>
               {links.map((item) => (
                 <div>

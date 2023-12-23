@@ -1,25 +1,25 @@
 import React, { useState } from 'react'
-import SubNavbar from '../components/SubNavbar'
-import Content from '../components/Content'
+import { SubNavbar, Content } from '../components'
+import { dataContent } from '../data/dummy'
 
 function Home() {
-  const [data, setData] = useState([{name: "foo"}, {name: "too"}])
+
   return(
-    <div className='w-full max-w-full mx-8'>
+    <div className='default-outlet'>
       <SubNavbar/>
-      <div className='w-full grid grid-cols-3 gap-4 mt-5'>
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        <Content />
-        {data.map((s, index) => (
-          <Content key={index} name={s}/>
+      {/* <div className='w-full grid grid-cols-3 gap-4 mt-5'> */}
+      <div className='content-container'>
+        {dataContent.map((item) => (
+          <Content 
+          key={item.index}
+          title={item.title}
+          uploader={item.uploader}
+          watched={item.watched}
+          uploaded={item.uploaded}
+          vertical={true}
+          size={'xl'}/>
         ))}
+        <Content />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Content } from '../components'
 
-const Liked = () => {
+const WatchLater = () => {
   return (
     <div className='default-outlet grid grid-cols-12 gap-1'>
         <div className='col-span-4'>
@@ -20,15 +20,7 @@ const Liked = () => {
             </div>
         </div>
         <div className='col-span-8 flex flex-col'>
-            <div className='mt-5 p-3 flex gap-3'>
-              <button className='button-second'>All</button>
-              <button className='button-second'>Video</button>
-              <button className='button-second'>Shorts</button>
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
+            <div className='mt-5 p-3'>Urutkan</div>
             <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
                 <Content />
                 <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
@@ -38,4 +30,4 @@ const Liked = () => {
   )
 }
 
-export default Liked
+export default WatchLater

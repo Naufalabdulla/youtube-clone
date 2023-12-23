@@ -5,13 +5,10 @@ import {Sidebar, Navbar} from '../../components'
 const Default = () => {  
   const [items, setItems] = useState(false)
   return (
-    <div className='h-screen  max-w-screen overflow-auto'>
+    <div className='h-screen w-screen grid grid-cols-12 overflow-auto'>
       <Navbar status={items} superb={setItems}/>
-
-      <div className='flex max-h-full overflow-auto'>
-        <Sidebar status={items}/>
-        <Outlet/>
-      </div>
+      <Sidebar status={items}/>
+      <Outlet/>
       </div>
   )
 }

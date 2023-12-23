@@ -1,8 +1,11 @@
 import React from 'react'
+import Content from '../components/Content'
 
 const Shorts = () => {
   return (
-    <div>Shorts</div>
+    <div className='default-outlet'>
+      <Content type={false} size={'xl'}/>
+    </div>
   )
 }
 

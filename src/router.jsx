@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Home, Alpha, Default, Watch, Subscription, Collection, Channel,
-         Shorts, Studio, Saved, Histori, Mix, Liked, Uploaded } from './pages'
+         Shorts, Studio, Saved, Histori, Mix, Liked, Uploaded, WatchLater } from './pages'
 import Kako from "./pages/kako";
+import { Beranda, Playlist, Release, Video, Stream, ChannelShorts, Comunity } from "./pages/subChannel";
 
 const router = createBrowserRouter([
     {
@@ -45,8 +46,42 @@ const router = createBrowserRouter([
                 element: <Saved/>
             },
             {
+                path: "/watchlater",
+                element: <WatchLater/>
+            },
+            {
                 path: "/channel",
-                element: <Channel/>
+                element: <Channel/>,
+                children:[
+                    {
+                        path: '/channel',
+                        element: <Beranda />
+                    },
+                    {
+                        path: '/channel/videos',
+                        element: <Video />
+                    },
+                    {
+                        path: '/channel/shorts',
+                        element: <Video />
+                    },
+                    {
+                        path: '/channel/streams',
+                        element: <Video />
+                    },
+                    {
+                        path: '/channel/releases',
+                        element: <Release />
+                    },
+                    {
+                        path: '/channel/playlists',
+                        element: <Playlist />
+                    },
+                    {
+                        path: '/channel/comunity',
+                        element: <Comunity />
+                    },
+                ]
             },
         ]
     },

@@ -9,8 +9,12 @@ export default {
     extend: {
       colors: {
         primary: '#121212',
-        secondary: '#1E1E1E'
-      }
+        secondary: '#1E1E1E',
+        third: '#2C2C2C',
+      },
+      height: {
+        nav: `calc('100vh'-'78px')`
+      },
     },
   },
   plugins: [],

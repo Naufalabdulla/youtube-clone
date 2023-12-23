@@ -166,3 +166,250 @@ export const links = [
         ]
     },
 ]
+
+export const dataContent =[
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+    {
+        title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',
+        uploader: 'Aqua CH',
+        watched: '200M X watched',
+        uploaded: 20.00
+    },
+]
+
+export const channelSublinks = [
+    {
+        name: 'beranda',
+        link: ''
+    },
+    {
+        name: 'video',
+        link: 'videos'
+    },
+    {
+        name: 'short',
+        link: 'shorts'
+    },
+    {
+        name: 'live',
+        link: 'streams'
+    },
+    {
+        name: 'release',
+        link: 'releases'
+    },
+    {
+        name: 'playlist',
+        link: 'playlists'
+    },
+    {
+        name: 'comunity',
+        link: 'comunity'
+    },
+]
+
+export const dataComunity = [
+    {
+        name: 'Suisei',
+        uploaded: '2 days ago',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum provident aut eveniet quod sit eum facere dolorem fuga quisquam deleniti facilis, esse rerum obcaecati hic minus nesciunt minima distinctio',
+        image: 'https://yt3.ggpht.com/xPUUzf1y_tuxJk2xGQ8XCwjjdxEezBh9KLxRiE-qO7RX993fGshUvPInGk_ZqXFm-Tv3eAayHP_2GQ=s640-c-fcrop64=1,000000008fffffff-nd-v1',
+        like: 23,
+        dislike: null,
+        comment: 17
+    },
+    {
+        name: '伊織もえ',
+        uploaded: '2 days ago',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum provident aut eveniet quod sit eum facere dolorem fuga quisquam deleniti facilis, esse rerum obcaecati hic minus nesciunt minima distinctio',
+        image: 'https://yt3.ggpht.com/if_HU4ZqSsvX6gOHIrznDsnWGBuT7KpKFgn9vndakVKYUe-3TJkQ8TOvq3z36Yzot5IloPftUqp-Pg=s1024-nd-v1',
+        like: 23,
+        dislike: null,
+        comment: 17
+    },
+]
