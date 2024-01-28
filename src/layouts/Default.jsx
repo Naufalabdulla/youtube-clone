@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Outlet } from 'react-router'
-import {Sidebar, Navbar} from '../../components'
+import {Sidebar, Navbar} from '../components'
 
 const Default = () => {  
   const [items, setItems] = useState(false)

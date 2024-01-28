@@ -30,7 +30,7 @@ const Sidebar = (props) => {
   // a bit problem on the sidebar in the bottom the last element will sink when the sidebear is overflowing
 
   return(
-      <div className='sticky top-16 h-fit col-span-2'>
+      <div className='sticky top-16 height col-span-2'>
 
         {props.status ? 
           <div className='w-16'>
@@ -39,7 +39,7 @@ const Sidebar = (props) => {
 
           :
 
-          <div className='w-60 h-screen px-2.5 py-3 overflow-hidden hover:overflow-auto overscroll-contain'>
+          <div className='w-60 height px-2.5 py-3 overflow-hidden hover:overflow-auto overscroll-contain'>
             <>
               {links.map((item) => (
                 <div>

@@ -7,7 +7,7 @@ const Beranda = () => {
     <div className='border-b flex flex-col py-5 gap-5'>
       <h1 className='text-2xl font-bold'>オリジナルソング</h1>
       <div className='flex gap-x-5 overflow-hidden'>
-        {dataContent.map((item) => (
+        {/* {dataContent.map((item) => (
           <Content 
             key={item.index}
             title={item.title}
@@ -16,7 +16,8 @@ const Beranda = () => {
             uploaded={item.uploaded}
             vertical={true}
             size={'sm'}/>
-        ))}
+        ))} */}
+        <Content vertical={true}/>
       </div>
     </div> 
   )

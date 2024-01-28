@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router'
-import { Navbar, Sidebar } from '../../components'
+import { Navbar, Sidebar } from '../components'
 
 const Alpha = () => {
   return (

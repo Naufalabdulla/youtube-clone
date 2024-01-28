@@ -4,8 +4,8 @@ import { Content } from '../components'
 const WatchLater = () => {
   return (
     <div className='default-outlet grid grid-cols-12 gap-1'>
-        <div className='col-span-4'>
-            <div className='rounded-xl bg-third flex flex-col gap-3 sticky top-16 p-5 h-5/6'>
+        <div className='col-span-4 height sticky top-16 pb-5'>
+            <div className='rounded-xl bg-third flex flex-col gap-3 p-5 h-full'>
                 <img className='rounded-xl' src="../images/quantum.jpg" alt="" />
                 <h1 className='text-2xl font-extrabold'>Tonton Nanti</h1>
                 <p>AOI</p>

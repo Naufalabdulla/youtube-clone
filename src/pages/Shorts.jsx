@@ -1,10 +1,10 @@
 import React from 'react'
-import Content from '../components/Content'
+import { Content, Card } from '../components'
 
 const Shorts = () => {
   return (
     <div className='default-outlet'>
-      <Content type={false} size={'xl'}/>
+      <Card/>
     </div>
   )
 }

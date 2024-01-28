@@ -8,13 +8,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#121212',
-        secondary: '#1E1E1E',
-        third: '#2C2C2C',
+        'primary': '#121212',
+        'secondary': '#1E1E1E',
+        'third': '#2C2C2C',
       },
       height: {
-        nav: `calc('100vh'-'78px')`
+        // 'nav': `calc('100vh'-'78px')`
       },
+      backgroundImage: {
+        'hero': 'url(/images/quantum.jpg)'
+      }
     },
   },
   plugins: [],

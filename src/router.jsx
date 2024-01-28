@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Alpha, Default, Watch, Subscription, Collection, Channel,
-         Shorts, Studio, Saved, Histori, Mix, Liked, Uploaded, WatchLater } from './pages'
+import { Home, Watch, Subscription, Collection, Channel,
+         Shorts, Studio, Saved, Histori, Mix, Liked, Uploaded, WatchLater, Music, Trends } from './pages'
+import { Default, Alpha, Specials, Beta } from "./layouts";
 import Kako from "./pages/kako";
 import { Beranda, Playlist, Release, Video, Stream, ChannelShorts, Comunity } from "./pages/subChannel";
 
@@ -50,36 +51,60 @@ const router = createBrowserRouter([
                 element: <WatchLater/>
             },
             {
-                path: "/channel",
+                path: "/hosimachi",
                 element: <Channel/>,
                 children:[
                     {
-                        path: '/channel',
+                        path: '/hosimachi',
                         element: <Beranda />
                     },
                     {
-                        path: '/channel/videos',
+                        path: '/hosimachi/videos',
                         element: <Video />
                     },
                     {
-                        path: '/channel/shorts',
+                        path: '/hosimachi/shorts',
                         element: <Video />
                     },
                     {
-                        path: '/channel/streams',
+                        path: '/hosimachi/streams',
                         element: <Video />
                     },
                     {
-                        path: '/channel/releases',
+                        path: '/hosimachi/releases',
                         element: <Release />
                     },
                     {
-                        path: '/channel/playlists',
+                        path: '/hosimachi/playlists',
                         element: <Playlist />
                     },
                     {
-                        path: '/channel/comunity',
+                        path: '/hosimachi/comunity',
                         element: <Comunity />
+                    },
+                    {
+                        path: '/hosimachi/comunity',
+                        element: <Comunity />
+                    },
+                ]
+            },
+            {
+                path: '/channel',
+                element: <Specials />,
+                children: [
+                    {
+                        path: '/channel/music',
+                        element: <Music />
+                    },
+                ]
+            },
+            {
+                path: '/feed',
+                element: <Beta />,
+                children: [
+                    {
+                        path: '/feed/trends',
+                        element: <Trends />
                     },
                 ]
             },

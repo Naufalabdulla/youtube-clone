@@ -4,9 +4,8 @@ import { channelSublinks } from '../data/dummy'
 import { Link, Outlet, NavLink } from 'react-router-dom'
 
 const Channel = () => {
-  const [hidden, setHidden] = useState(true)
   const active = `py-3 px-1 border-b-2 capitalize`
-  const notactive = 'py-3 px-1 hover:border-b-2 capitalize'
+  const notactive = 'py-3 px-1 mb-0.5 hover:border-b-2 hover:mb-0 capitalize'
 
   const ririka = () =>{
     document.getElementById('search').focus()
@@ -31,7 +30,7 @@ const Channel = () => {
 
       <div className='border-b flex gap-3 px-5 items-center'>
         {channelSublinks.map((item) => (
-          <NavLink to={`/channel/${item.link}`} className={({isActive}) => isActive ? active : notactive }>{item.name}</NavLink>
+          <NavLink to={`/hosimachi/${item.link}`} className={({isActive}) => isActive ? active : notactive }>{item.name}</NavLink>
         ))}
         <input id='search' type="text" className={`bg-transparent outline-none border-b p-2 focus:border`} />
         <button onClick={() => ririka()}>focus</button>

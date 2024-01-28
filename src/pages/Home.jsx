@@ -3,7 +3,7 @@ import { SubNavbar, Content } from '../components'
 import { dataContent } from '../data/dummy'
 
 function Home() {
-
+  
   return(
     <div className='default-outlet'>
       <SubNavbar/>

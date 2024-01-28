@@ -48,9 +48,9 @@ body{
   /* scrollbar-gutter: stable; */
 }
 
-/* .sidebar{ not applied to the sidebar
+.sidebar{
   border: #ffffff;
-} */
+}
 
 ::-webkit-scrollbar-thumb{
   background-color: rgb(216, 216, 216);
@@ -79,4 +79,8 @@ body{
 
 .default-outlet{
   @apply mx-8 col-span-10
+}
+
+.height{
+  height: calc(100vh - 58px);
 }

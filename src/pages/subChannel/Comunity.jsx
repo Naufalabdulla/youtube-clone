@@ -10,7 +10,7 @@ const Comunity = () => {
 
             <div className='flex flex-col gap-2'>
                 <p className='text-sm font-bold capitalize'>{item.name}<span className='text-sm font-normal ms-3'>{item.uploaded}</span></p>
-                <p className=''>{item.description}</p>
+                <p className='line-clamp-5'>{item.description}</p>
                 <img className='rounded-lg' src={item.image} alt="" />
                 <div className='flex gap-2'>
                     <button className='flex'>
