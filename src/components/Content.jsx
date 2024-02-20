@@ -29,8 +29,8 @@ const Content = ({thumbnail, title, uploader, uploaded, watched, vertical, size}
       <Link to={`/watch`} className='flex gap-2 w-full'>
         <img src="../images/quantum.jpg" className={`${sizes.width} ${sizes.height} object-cover rounded-lg`} alt="" />
         <div className='flex flex-col gap-1'>
-          <h1 className='font-extrabold'>Lorem ipsum dolor sit amet consectetur.</h1>
-          <p className='text-sm truncate'>Lorem, ipsum dolor.</p>
+          <h1 className='font-extrabold line-clamp-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic reiciendis excepturi culpa eligendi sequi! Nesciunt?</h1>
+          <p className='text-sm '>Lorem, ipsum dolor.</p>
           <p className='text-sm'>477x ditonton </p>
         </div>
       </Link>

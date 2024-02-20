@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Content } from '../components'
+import { YThumbnail, HThumbnail } from '../components'
 import { dataContent } from '../data/dummy'
 
 const Subscription = () => {
@@ -16,18 +16,20 @@ const Subscription = () => {
         </div>
       </div>
 
-      <div className={`${ grid ? 'content-container' : 'content-container-alpha'}`}>
-        {dataContent.map((item) => (
-          <Content 
-            key={item.index}
-            title={item.title}
-            uploader={item.uploader}
-            watched={item.watched}
-            uploaded={item.uploaded}
-            vertical={grid}
-            size={'xl'}/>
-        ))}
-      </div>
+      {grid ? 
+        <div className='content-container'>
+          {dataContent.map((item) => (
+            <YThumbnail key={item.index} data={item}/>
+          ))}
+        </div>
+      : 
+        <div className='content-container-alpha'>
+          {dataContent.map((item) => (
+            <HThumbnail key={item.index} data={item}/>
+          ))}
+          sad
+        </div>
+      }
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { SubNavbar, Content } from '../components'
+import { SubNavbar } from '../components'
 import { dataContent } from '../data/dummy'
+import YThumbnail from '../components/thumbnails/YThumbnail'
 
 function Home() {
   
@@ -10,16 +11,8 @@ function Home() {
       {/* <div className='w-full grid grid-cols-3 gap-4 mt-5'> */}
       <div className='content-container'>
         {dataContent.map((item) => (
-          <Content 
-          key={item.index}
-          title={item.title}
-          uploader={item.uploader}
-          watched={item.watched}
-          uploaded={item.uploaded}
-          vertical={true}
-          size={'xl'}/>
+          <YThumbnail key={item.index} data={item} max={420}/>
         ))}
-        <Content />
       </div>
     </div>
   )

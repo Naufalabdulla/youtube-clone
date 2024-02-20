@@ -1,5 +1,5 @@
 import React from 'react'
-import { Content, Card } from '../components'
+import { YThumbnail, Card } from '../components'
 
 const Shorts = () => {
   return (

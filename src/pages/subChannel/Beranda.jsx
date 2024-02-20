@@ -1,6 +1,6 @@
 import React from 'react'
 import { dataContent } from '../../data/dummy'
-import { Content } from '../../components'
+import { YThumbnail } from '../../components'
 
 const Beranda = () => {
   return (
@@ -8,7 +8,7 @@ const Beranda = () => {
       <h1 className='text-2xl font-bold'>オリジナルソング</h1>
       <div className='flex gap-x-5 overflow-hidden'>
         {/* {dataContent.map((item) => (
-          <Content 
+          <YThumbnail
             key={item.index}
             title={item.title}
             uploader={item.uploader}
@@ -17,7 +17,7 @@ const Beranda = () => {
             vertical={true}
             size={'sm'}/>
         ))} */}
-        <Content vertical={true}/>
+        <YThumbnail/> 
       </div>
     </div> 
   )

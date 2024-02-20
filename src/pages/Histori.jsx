@@ -1,5 +1,5 @@
 import React from 'react'
-import Content from '../components/Content'
+import { HThumbnail } from '../components'
 import { dataContent } from '../data/dummy'
 
 const Histori = () => {
@@ -10,15 +10,13 @@ const Histori = () => {
         <div className='col-span-7 content-container-alpha'>
           <h4 className='text-xl font-bold'>Today</h4>
           {dataContent.map((item) => (
-            <Content 
+            <HThumbnail
               key={item.index}
-              title={item.title}
-              uploader={item.uploader}
-              uploaded={item.uploaded}
-              vertical={false}
-              size={'xl'}/>
+              data={item}/>
           ))}
         </div>
+
+        {/* search history section */}
         <div className="col-span-4 mx-10 fixed top-36 right-56">
           <input type="text" placeholder='search history' className='bg-transparent border-b outline-none p-2 w-full'/>
           <div className='p-3 font-bold'>delete all history</div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Content } from '../components'
+import { YThumbnail } from '../components'
 
 const Liked = () => {
   return (
@@ -26,39 +26,7 @@ const Liked = () => {
               <button className='button-second'>Shorts</button>
             </div>
             <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
-                <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
-            </div>
-            <div className='flex p-3 hover:bg-third rounded-lg group gap-2 items-center'>
-                <Content />
+                {/* <YThumbnail/> */}
                 <img className='h-fit group-hover:visible invisible' src="../assets/three_dot.svg" alt="" />
             </div>
         </div>
