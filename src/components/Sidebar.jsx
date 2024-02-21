@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { links } from "../data/dummy";
 import { NavLink } from 'react-router-dom'
 
+// make function doparse same as the route 
 const Sidebar = (props) => {
   const [first, setFirst] = useState(true)
 

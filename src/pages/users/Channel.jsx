@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { YThumbnail } from '../components'
-import { channelSublinks } from '../data/dummy'
+import { YThumbnail } from '../../components'
+import { channelSublinks } from '../../data/dummy'
 import { Link, Outlet, NavLink } from 'react-router-dom'
 
 const Channel = () => {

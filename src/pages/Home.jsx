@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import { SubNavbar } from '../components'
+import React from 'react'
+import { SubNavbar, YThumbnail } from '../components'
 import { dataContent } from '../data/dummy'
-import YThumbnail from '../components/thumbnails/YThumbnail'
 
 function Home() {
   

@@ -1,6 +1,6 @@
 import React from 'react'
-import { HThumbnail } from '../components'
-import { dataContent } from '../data/dummy'
+import { HThumbnail } from '../../components'
+import { dataContent } from '../../data/dummy'
 
 const Histori = () => {
   return (

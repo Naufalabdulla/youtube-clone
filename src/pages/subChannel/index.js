@@ -1,7 +1,0 @@
-export { default as Beranda } from './Beranda'
-export { default as Video } from './Video'
-export { default as Release } from './Release'
-export { default as Playlist } from './Playlist'
-export { default as Comunity } from './Comunity'
-export { default as ChannelShorts } from './ChannelShorts'
-export { default as Stream } from './Stream'
