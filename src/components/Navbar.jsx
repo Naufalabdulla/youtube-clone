@@ -37,6 +37,7 @@ const Navbar = (props) => {
                 <p className='hidden peer-hover:inline-flex bg-gray-500 rounded-md p-2 mt-5 -left-5 absolute top-full text-xs'>Settings</p>
               </div>
             </div>
+            
           </div>
         </nav>
     )

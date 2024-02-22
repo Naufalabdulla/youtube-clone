@@ -167,6 +167,203 @@ export const links = [
     },
 ]
 
+// Sidebar 
+const home = [
+    {
+        section: 'main',
+        links: [
+            {
+                name: 'Home',
+                link: '',
+                logo: 'home',
+            },
+            {
+                name: 'Shorts',
+                link: 'shorts',
+                logo: 'home',
+            },
+            {
+                name: 'subscription',
+                link: 'subscription',
+                logo: 'subscription',
+            },
+        ]
+    },
+]
+
+const users = [
+    {
+        section: 'you',
+        links: [
+            {
+                name: 'Your channel',
+                link: 'yourchannel',
+                logo: 'weird-box',
+            },
+            {
+                name: 'histori',
+                link: 'histori',
+                logo: 'clock',
+            },
+            {
+                name: 'your video',
+                link: 'yourvideo',
+                logo: 'collection',
+            },
+            {
+                name: 'watch later',
+                link: 'watchlater',
+                logo: 'clock',
+            },
+            {
+                name: 'liked',
+                link: 'liked',
+                logo: '',
+            },
+            {
+                name: 'mix',
+                link: 'mix',
+                logo: '',
+            },
+        ]
+    },
+]
+
+const subscription = [
+    {
+        section: 'subscription',
+        links: [
+            {
+                name: 'subs',
+                link: 'hosimachi',
+                logo: '',
+            },
+            {
+                name: 'subs',
+                link: 'hosimachi',
+                logo: '',
+            },
+            {
+                name: 'subs',
+                link: 'hosimachi',
+                logo: '',
+            },
+            {
+                name: 'subs',
+                link: 'hosimachi',
+                logo: '',
+            },
+        ]
+    },
+]
+
+const exploration = [
+    {
+        section: 'exploration',
+        links: [
+            {
+                name: 'Trends',
+                link: 'trends',
+                logo: '',
+            },
+            {
+                name: 'music',
+                link: 'music',
+                logo: '',
+            },
+            {
+                name: 'film',
+                link: 'film',
+                logo: '',
+            },
+            {
+                name: 'game',
+                link: 'game',
+                logo: '',
+            },
+            {
+                name: 'news',
+                link: 'news',
+                logo: '',
+            },
+            {
+                name: 'sports',
+                link: 'sports',
+                logo: '',
+            },
+        ]
+    },
+]
+
+const premium = [
+    {
+        section: 'other',
+        links: [
+            {
+                name: 'Premium',
+                link: 'premium',
+                logo: '',
+            },
+            {
+                name: 'studio',
+                link: 'studio',
+                logo: '',
+            },
+            {
+                name: 'music',
+                link: 'music',
+                logo: '',
+            },
+            {
+                name: 'kids',
+                link: 'kids',
+                logo: '',
+            },
+        ]
+    },
+]
+
+const account = [
+    {
+        section: 'others',
+        links: [
+            {
+                name: 'Settings',
+                link: 'settings',
+                logo: '',
+            },
+            {
+                name: 'reports histori',
+                link: 'reports histori',
+                logo: '',
+            },
+            {
+                name: 'support',
+                link: 'support',
+                logo: '',
+            },
+            {
+                name: 'thought',
+                link: 'thought',
+                logo: '',
+            },
+        ]
+    },
+]
+
+export const sidebar = [
+    home,
+    users, 
+    subscription,
+    exploration,
+    exploration,
+    premium,
+    account
+]
+
+
+
+
 export const dataContent =[
     {
         title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores illum architecto cumque ad cum et temporibus non facere reprehenderit excepturi.',

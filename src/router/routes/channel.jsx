@@ -7,39 +7,39 @@ export const channelRoutes = [
         element: <Default />,
         children: [
             {
-                path: "/@hosimachi",
+                path: "/:hosimachi",
                 element: <Channel/>,
                 children:[
                     {
-                        path: '/@hosimachi',
+                        path: '/:hosimachi',
                         element: <Beranda />
                     },
                     {
-                        path: '/@hosimachi/videos',
+                        path: '/:hosimachi/videos',
                         element: <Video />
                     },
                     {
-                        path: '/@hosimachi/shorts',
+                        path: '/:hosimachi/shorts',
                         element: <Video />
                     },
                     {
-                        path: '/@hosimachi/streams',
+                        path: '/:hosimachi/streams',
                         element: <Video />
                     },
                     {
-                        path: '/@hosimachi/releases',
+                        path: '/:hosimachi/releases',
                         element: <Release />
                     },
                     {
-                        path: '/@hosimachi/playlists',
+                        path: '/:hosimachi/playlists',
                         element: <Playlist />
                     },
                     {
-                        path: '/@hosimachi/comunity',
+                        path: '/:hosimachi/comunity',
                         element: <Comunity />
                     },
                     {
-                        path: '/@hosimachi/comunity',
+                        path: '/:hosimachi/comunity',
                         element: <Comunity />
                     },
                 ]

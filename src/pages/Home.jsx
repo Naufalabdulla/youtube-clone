@@ -3,7 +3,7 @@ import { SubNavbar, YThumbnail } from '../components'
 import { dataContent } from '../data/dummy'
 
 function Home() {
-  
+  // <YThumbnail />
   return(
     <div className='default-outlet'>
       <SubNavbar/>
