@@ -1,24 +1,13 @@
 import React, { useState } from 'react'
 import { links } from "../data/dummy";
-import { NavLink } from 'react-router-dom'
 import Shrink from './sidebar/shrink';
+import Expand from './sidebar/Expand';
 
 // make function doparse same as the route 
 const Sidebar = (props) => {
-  
-  const Icons2 = ({logo, link, name}) => {
-    const activeLink = "flex px-3 py-2.5 rounded-lg gap-5 bg-third";
-    const deactiveLink = "flex px-3 py-2.5 rounded-lg gap-5 hover:bg-third opacity-80";
-    return(
-      <NavLink to={`/${link}`} className={({isActive}) => isActive ? activeLink : deactiveLink}>
-        <img src={`../assets/${logo}.svg`} alt="" className='h-6 w-6'/>
-        <p className='text-center capitalize'>{name}</p>
-      </NavLink>
-    )
-  }
 
   return(
-      <div className='sticky top-16 height col-span-2'>
+      <div className='sticky top-16 height col-span-2 bg-primary'>
 
         {props.status ? 
 
@@ -35,7 +24,7 @@ const Sidebar = (props) => {
               {links.map((item) => (
                 <>
                   {item.links.map((link) => (
-                    <Icons2 
+                    <Expand 
                       link={link.link} 
                       name={link.name} 
                       logo={link.logo}/>

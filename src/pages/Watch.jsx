@@ -1,5 +1,5 @@
 import React from 'react'
-import { YThumbnail, SubNavbar } from '../components'
+import { HThumbnail, SubNavbar } from '../components'
 
 
 const Watch = () => {
@@ -67,7 +67,7 @@ const Watch = () => {
       <div className='col-span-4'>
         <SubNavbar />
         <div className='flex flex-col gap-4'>
-          <YThumbnail/>
+          <HThumbnail/>
         </div>
       </div>
     </div>

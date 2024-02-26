@@ -18,8 +18,19 @@ const Navbar = (props) => {
 
               {/* Search */}
             <div className='flex gap-2 items-center'>
-              <input className='flex rounded-full bg-transparent border border-neutral-700 px-3 py-2 w-96 focus:outline-blue-600' placeholder='search' type="text" name="" id="" />
-              <div className='flex relative'>
+              <div className='flex'>
+                <div className='flex px-3 gap-2 items-center border border-neutral-700 rounded-l-full focus-within:border-blue-700 flex-row-reverse'>
+                  <input className='outline-none bg-transparent w-96 peer' type="text" placeholder='search' />
+                  <svg className=' fill-white peer-focus:flex hidden' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                </div>
+
+                <button className='py-2 px-3 bg-third border border-neutral-700 rounded-r-full border-l-0'>
+                  <svg className='fill-white' xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                </button>
+              </div>
+
+              {/* Mic */}
+              <div className='flex relative'> 
                 <button type="button" className='peer bg-gray-800 rounded-full py-2 px-3  hover:bg-gray-700'>m</button>
                 {/* <p className='hidden peer-hover:inline-flex bg-gray-500 rounded-md p-2 mt-5 -left-1 absolute top-full text-xs'>Voice</p> */}
               </div>

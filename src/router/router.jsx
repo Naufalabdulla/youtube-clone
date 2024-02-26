@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { publicRoutes } from "./routes/public";
 import { channelRoutes } from "./routes/channel";
 import { fallbackRoutes } from './routes/fallback'
+import { watchRoutes } from "./routes/watchRoutes";
  
 export function AppRoutes(){
     // const doParse = (routes) => {
@@ -19,6 +20,7 @@ export function AppRoutes(){
         ...publicRoutes,
         ...channelRoutes,
         ...fallbackRoutes,
+        ...watchRoutes,
     ]
 
     const routers = createBrowserRouter(gather)

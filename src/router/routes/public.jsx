@@ -1,5 +1,5 @@
 import { Default } from "../../layouts";
-import { Home, Shorts, Subscription, Studio, Histori, Uploaded, Collection, Saved, Liked, WatchLater } from "../../pages";
+import { Home, Shorts, Subscription, Studio, Histori, Uploaded, Collection, Saved, Liked, WatchLater, Search } from "../../pages";
 
 export const publicRoutes = [
     {
@@ -11,7 +11,7 @@ export const publicRoutes = [
                 element: <Home/>,
             },
             {
-                path: "shorts",
+                path: "/shorts",
                 element: <Shorts/>
             },
             {
@@ -46,6 +46,10 @@ export const publicRoutes = [
                 path: "/watchlater",
                 element: <WatchLater/>
             },
+            {
+                path: '/results',
+                element: <Search />
+            }
         ]
     }
 ]
